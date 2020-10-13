@@ -1,0 +1,35 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+.auto_img {
+    width: 130px;
+}
+
+.login {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+    padding: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(131, 129, 129);
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.dashboards {
+    margin-top: 20px;
+}
+
+.domo-card {
+    justify-content: space-evenly;
+    height: 400px;
+    background-color: white;
+    font-size: 26px;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

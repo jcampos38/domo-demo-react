@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './styles/custom.scss'
 import './index.css';
-import App from './App';
+import AppRoutes from './AppRoutes'
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.css';
+import {BrowserRouter as Router} from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <AppRoutes/>
+  </Router>,
   document.getElementById('root')
 );
 
