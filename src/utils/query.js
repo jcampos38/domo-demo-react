@@ -1,5 +1,4 @@
 import axios from 'axios';
-
 axios.defaults.baseURL = process.env.REACT_APP_API_URL;
 
 axios.interceptors.request.use((request) => {
@@ -20,7 +19,7 @@ export default function query(
     const requestObj = {
         method,
         url: endpoint,
-        withCredentials: true,
+        withCredentials: false,
         retry: opts.retry,
         headers: {
             'Content-Type': 'application/json',

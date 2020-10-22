@@ -10,6 +10,7 @@ import {
   NavbarText
 } from 'reactstrap';
 import UserContext from './../context/UserContext';
+import AuthService from './../services/AuthService';
 
 const Menu = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +20,7 @@ const Menu = (props) => {
 
   const logout = () => {
     setUser(null);
+    AuthService.signOut();
   }
 
   return (

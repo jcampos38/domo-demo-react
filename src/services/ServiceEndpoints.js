@@ -1,6 +1,6 @@
 const SERVICE_ENDPOINTS = {
-    USER_AUTH: '/login',
-    EMBED: '/embed' 
+    EMBED_ITEMS: '/embed/items',
+    EMBED_TOKEN: '/embed/items/' 
 };
 
 export default SERVICE_ENDPOINTS;
