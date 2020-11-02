@@ -1,13 +1,13 @@
 import query from '../utils/query';
 import SERVICE_ENDPOINTS from './ServiceEndpoints';
-import config from '../assets/config.json';
+import config from '../config';
 
 class EmbedService {
     static getItems() {
         return query({
             method: 'GET',
             endpoint: SERVICE_ENDPOINTS.EMBED_ITEMS,
-            headers: { Authorization: 'Bearer ' + sessionStorage.getItem(config.name_session) }
+            headers: { Authorization: 'Bearer ' + sessionStorage.getItem(config.msal.name_session) }
         });
     }
 
@@ -15,7 +15,7 @@ class EmbedService {
         return query({
             method: 'GET',
             endpoint: SERVICE_ENDPOINTS.EMBED_TOKEN + id,
-            headers: { Authorization: 'Bearer ' + sessionStorage.getItem(config.name_session) }
+            headers: { Authorization: 'Bearer ' + sessionStorage.getItem(config.msal.name_session) }
         });
     }
 }

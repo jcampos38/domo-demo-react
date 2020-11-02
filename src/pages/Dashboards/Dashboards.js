@@ -13,7 +13,7 @@ const Dashboards = () => {
         try {
             const { data } = await EmbedService.getItems();
             console.log(data)
-            setIds(data.visualizations);
+            setIds(data);
         }catch(e) {
             console.log(e);
         }
@@ -34,7 +34,7 @@ const Dashboards = () => {
 
     const getEmbedTokens =  () => {
         let tokens = Promise.all(ids.map((i) => (
-            getEmbedToken(i.id, i.title)
+            getEmbedToken(i.idVisualization, i.title)
         )));
         tokens.then(data => setEmbedTokens(data))
     }

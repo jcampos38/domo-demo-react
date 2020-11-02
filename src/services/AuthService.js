@@ -3,7 +3,7 @@ import {
   } from 'msal';
   //import { faMicrosoft } from '@fortawesome/free-brands-svg-icons';
   import Identity from '../utils/models';
-  import config from '../assets/config.json';
+  import config from '../config';
   
   class AuthService {
     constructor(configuration) {

@@ -20,6 +20,7 @@ const Menu = (props) => {
 
   const logout = () => {
     setUser(null);
+    window.sessionStorage.clear()
     AuthService.signOut();
   }
 
